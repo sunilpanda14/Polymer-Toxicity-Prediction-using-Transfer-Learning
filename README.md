@@ -28,7 +28,8 @@ Key goals include:
 
 The project follows a systematic "Materials Informatics" pipeline, moving from data curation to deployment.
 
-![Implementation Steps](Polymer_Toxicity_Prediction/Images_readme/Implementation steps.png)
+![Implementation Steps](<img width="449" height="263" alt="image" src="https://github.com/user-attachments/assets/6e909db7-e9ab-4383-a631-03c19a6d3a84" />
+)
 
 ### A. Data Collection
 * **Source Domain:** A curated subset of **4,752 small molecules** from the **Tox21 10K library**, annotated with four key hazard endpoints: Carcinogenicity, Mutagenicity, Specific Target Organ Toxicity (STOT), and Aquatic Toxicity.
@@ -77,7 +78,8 @@ The final model was integrated into a **Streamlit** web application, allowing us
 
 A core contribution of this thesis is the comparative analysis of different transfer learning techniques to handle the scarcity of polymer labels.
 
-![Transfer Learning Pipeline](/home/sunil/am2/Master_Thesis/Polymer_Toxicity_Prediction/Images_readme/Tranfer learning Pipeline.png)
+![Transfer Learning Pipeline](<img width="860" height="591" alt="image" src="https://github.com/user-attachments/assets/0bc3fd72-6e20-4e44-aee3-a1658520730d" />
+)
 
 ### A. Polymer-Only Baseline
 * **Method:** A DNN trained *exclusively* on the limited polymer dataset (approx. 60 training samples).
@@ -95,7 +97,8 @@ A core contribution of this thesis is the comparative analysis of different tran
 * **Method:** The initial layers of the pre-trained Tox21 model are **frozen** (weights locked). These layers act as robust feature extractors for chemical substructures. Only the final output layers are retrained on the polymer subset.
 * **Advantage:** This prevents "catastrophic forgetting" of the robust molecular features while adapting the decision boundary for polymers.
 
-![Model Comparisons](/home/sunil/am2/Master_Thesis/Polymer_Toxicity_Prediction/Images_readme/Model_compariions.png)
+![Model Comparisons](<img width="939" height="371" alt="image" src="https://github.com/user-attachments/assets/df250d11-d01c-4127-910c-0355134842f6" />
+)
 
 ---
 
@@ -103,7 +106,8 @@ A core contribution of this thesis is the comparative analysis of different tran
 
 The performance of the models was evaluated using **Micro-Average ROC-AUC** and **F1 Scores** on a hold-out test set (Noble Test Set).
 
-![Comparison Score](/home/sunil/am2/Master_Thesis/Polymer_Toxicity_Prediction/Images_readme/Comparision Score.png)
+![Comparison Score](<img width="794" height="263" alt="image" src="https://github.com/user-attachments/assets/37329ee1-bbe5-4760-99e5-c82b57115f38" />
+)
 
 * **Polymer-Only Baseline (ROC-AUC 0.47):** Performed no better than random guessing, proving that deep learning from scratch is impossible with such small data.
 * **Zero-Shot Transfer (ROC-AUC 0.69):** Showed significant improvement, confirming that PolyBERT fingerprints successfully capture shared structural features between molecules and polymers.
