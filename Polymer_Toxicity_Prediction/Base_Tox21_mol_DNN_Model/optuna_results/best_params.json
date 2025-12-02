@@ -1,0 +1,22 @@
+{
+  "lr": 0.0006962113924696865,
+  "weight_decay": 0.007995428937250934,
+  "n_layers": 3,
+  "hidden_dim_0": 704,
+  "hidden_dim_1": 768,
+  "hidden_dim_2": 384,
+  "dropout_base": 0.6964711909606908,
+  "dropout_0": 0.6003649456234935,
+  "dropout_1": 0.6018533303325356,
+  "dropout_2": 0.6443119764788907,
+  "activation_0": "ELU",
+  "elu_alpha_0": 1.9941552818131472,
+  "activation_1": "LeakyReLU",
+  "leaky_relu_slope_1": 0.12788199931911712,
+  "activation_2": "ReLU",
+  "batch_size": 32,
+  "early_stopping_patience": 9,
+  "early_stopping_min_delta": 0.0065522790773924365,
+  "optimizer": "Adam",
+  "use_scheduler": "True"
+}
