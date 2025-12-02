@@ -28,7 +28,7 @@ Key goals include:
 
 The project follows a systematic "Materials Informatics" pipeline, moving from data curation to deployment.
 
-![Implementation Steps](/home/sunil/am2/Master_Thesis/Polymer_Toxicity_Prediction/Images_readme/Implementation steps.png)
+![Implementation Steps](Polymer_Toxicity_Prediction/Images_readme/Implementation steps.png)
 
 ### A. Data Collection
 * **Source Domain:** A curated subset of **4,752 small molecules** from the **Tox21 10K library**, annotated with four key hazard endpoints: Carcinogenicity, Mutagenicity, Specific Target Organ Toxicity (STOT), and Aquatic Toxicity.
